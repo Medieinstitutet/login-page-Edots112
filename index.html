@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Login page</title>
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+        <nav>
+        <div class="nav-container">
+            
+                <ul class="nav-ul">
+                    <li class="list-item"><a href="#">Hem</a></li>
+                </ul>
+                <img class="nav-img" src="/img/house.png" alt="">
+                <div class="nav-button">
+                    <button
+                        class="login"
+                        id="show-login">
+                        Logga in
+                    </button>
+                    <button
+                        class="login remove"
+                        id="logout-button"
+                    >
+                        
+                        Logga ut
+                    </button>
+                </div>
+            
+        </div>
+    </nav>
+    <div id="cover"></div>
+		<section class="heropage" id="hero">
+                <h1></h1>
+                <h2 id="citat"></h2>
+                <img class="hero-img" src="/img/SCAB.png">
+                <div class="img-container">
+                <div class="img-frame">
+                    <img src="/img/spain.jpg" alt="img spain">
+                    <p><em>Spanien</em>, Lägenhet i underbara Barcelona. <br>2,000,000 euro.</p>
+                    
+                </div>
+                <div class="img-frame">
+                    <img src="/img/portugal.jpg" alt="img spain">
+                    <p><em>Portugal</em>, Lägenhet i underbara Portugal. <br>2,500,000 euro</p>
+                    
+                </div>
+                <div class="img-frame"><img src="/img/grekland.jpg" alt="img spain">
+                    <p><em>Grekland</em>, Lägenhet i underbara Grekland. <br>1,000,00 euro</p>
+                    </div>
+            </div>
+        </section>
+            <form id="form" >
+		<div
+			class="form-container"
+			id="form-container">
+            <div class="form">
+			<h2>Logga in</h2>
+            <p id="error-msg"></p>
+			<div class="close-btn">&times;</div>
+			<div class="form-element">
+				<label for="username">Användare:</label>
+				<input
+					type="text"
+					name="username"
+					placeholder="Användarnamn"
+                    id="username"
+                    required />
+			</div>
+			<span id="username-error"></span>
+			<div class="form-element">
+				<label for="password">Lösenord:</label>
+				<input
+					type="password"
+					name="password"
+					placeholder="Lösenord"
+                    id="password"
+                    required />
+			</div>
+			<span id="password-error"></span>
+            <div class="button-element">
+			<button
+				class="signin-button"
+				type="click"
+				id="sign-button"
+                >
+				Sign in
+			</button>
+        </div>
+        </div>
+		</div>
+    </form>
+
+    <footer class ="footer">
+        
+        <h1>Kontakt:</h1>
+        <div class="footer-container">
+        <p>Email:<br>info@stellacom.se</p>
+        <p>Telefon:<br>070111222333</p>
+        <p></p>
+        </div>
+    </footer>
+		<script src="script.js"></script>
+	</body>
+</html>
